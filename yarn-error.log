@@ -1,0 +1,39 @@
+Arguments: 
+  /home/tolase/.nvm/versions/node/v16.3.0/bin/node /usr/share/yarn/bin/yarn.js install --check-files
+
+PATH: 
+  /home/tolase/.rbenv/plugins/ruby-build/bin:/home/tolase/.rbenv/shims:/home/tolase/.rbenv/bin:/home/tolase/.nvm/versions/node/v16.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/ImageMagick-6.9.3-Q8:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Cryptowatch Desktop/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Users/hp/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/hp/AppData/Local/Programs/Python/Python38/:/mnt/c/Ruby25-x64/bin:/mnt/c/Users/hp/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/hp/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/hp/AppData/Roaming/npm:/mnt/c/Users/hp/AppData/Local/Yarn/bin:/snap/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type boolean (true)
+      at new NodeError (node:internal/errors:363:5)
+      at validateString (node:internal/validators:119:11)
+      at Object.resolve (node:path:1098:7)
+      at YarnRegistry.<anonymous> (/usr/share/yarn/lib/cli.js:96435:50)
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "app",
+    "private": "true",
+    "scripts": {
+      "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
