@@ -9,6 +9,7 @@ gem "sprockets-rails", "3.4.2"
 gem "importmap-rails", "1.1.0"
 gem "turbo-rails",     "1.1.1"
 gem "stimulus-rails",  "1.0.4"
+gem "pg", "1.3.5"
 gem "jbuilder",        "2.11.5"
 gem "puma",            "5.6.4"
 gem "bootsnap",        "1.12.0", require: false
@@ -33,9 +34,9 @@ group :test do
   gem "guard-minitest",           "2.4.6"
 end
 
-group :production do
-  gem "pg", "1.3.5"
-end
+# group :production do
+#   gem "pg", "1.3.5"
+# end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem.
 # Uncomment the following line if you're running Rails
