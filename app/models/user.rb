@@ -70,6 +70,13 @@ class User < ApplicationRecord
         reset_sent_at < 2.hours.ago
     end
 
+    has_many :microposts, dependent: :destroy
+    
+    # Defines a proto-feed
+    def feed
+        Micropost.where("user_id = ?", id)
+    end
+
     private
         # Converts email to all lowercase
         def downcase_email
